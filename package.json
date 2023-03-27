@@ -9,7 +9,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint . --fix",
     "cypress:open": "node_modules/.bin/cypress open",
-    "cypress:run": "node_modules/.bin/cypress run"
+    "cypress:run": "node_modules/.bin/cypress run",
+    "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "repository": {
     "type": "git",
